@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="lib/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
+<script src="lib/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+<script src="lib/wordcloud2-0.0.1/hover.js"></script>
+<script src="lib/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
+
+<script type="text/javascript">(function(){
+// add a listener for scroll events that occur at the top level in the bubble
+// phase (i.e. are unhandled inside the HTML widget)
+window.addEventListener("mousewheel", function(evt) {
+   // if not in a iframe, do nothing
+   if (!window.frameElement)
+      return;
+
+   // ignore if default event action was suppressed
+   if (evt.defaultPrevented)
+      return;
+
+   // in an iframe, clone the event and treat it as a scroll on the frame's host
+   // element
+   window.frameElement.parentElement.dispatchEvent(
+      new evt.constructor(evt.type, evt));
+});
+})();
+
+</script></head>
+<body>
+<div id="htmlwidget_container">
+<div id="htmlwidget-1d2108ffd208b523d58f" style="width:504px;height:504px;" class="wordcloud2 html-widget"></div>
+</div>
+<script type="application/json" data-for="htmlwidget-1d2108ffd208b523d58f">{"x":{"word":["(CEQ)","(NEPA),","12th","14,","1969","2021","Act","actions","addressing","advancing","advises","African","agency","also","America's","American","among","April","are","areas.","as","As","Brenda","BRENDA","CEQ","CEQ,","CEQ.","Chair","Chair,","challenges","change","change,","climate","communities.","confirmed","conservation,","coordinates","Council","created","development.","develops","economic","efficient,","efforts","ensure","environment","environment.","environmental","Environmental","Executive","faces","federal","first","focused","government's","growth","health","implementing","improve,","in","infrastructure","input","is","job","justice","justice,","lands,","local","Mallory","MALLORY","nation","National","natural","NEPA,","oceans,","of","Office","on","opportunities","other","particularly","policies","Policy","position.","preserve,","President","projects","protect","public","Quality","reflect","resources","responsible","reviews","Senate","serve","she","She","States","sustainability,","sworn","this","thorough,","United","was","which","while","wildlife","within","works"],"freq":[1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,4,2,1,1,3,1,1,1,1,2,1,2,3,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,3,1,5,1,1,1,2,1,1,2,3,1,2,4,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":36,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-1d2108ffd208b523d58f">{"viewer":{"width":450,"height":350,"padding":0,"fill":true},"browser":{"width":960,"height":500,"padding":0,"fill":true}}</script>
+</body>
+</html>
